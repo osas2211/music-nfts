@@ -4,6 +4,7 @@ import { FcMusic } from "react-icons/fc"
 import { BiSolidDownArrow } from "react-icons/bi"
 import { Input } from "antd"
 import { CgSearch } from "react-icons/cg"
+import { MusicNFTCard } from "./MusicNFTCard"
 
 export const MusicNFTs = () => {
   return (
@@ -29,6 +30,20 @@ export const MusicNFTs = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-4 my-5 md:my-7 gap-5">
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
+        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
+        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
+        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
+        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
       </div>
     </div>
   )
