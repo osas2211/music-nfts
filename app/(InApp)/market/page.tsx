@@ -1,4 +1,5 @@
 "use client"
+import { NFTsTab } from "@/components/market/NFTsTab"
 import React from "react"
 
 const HomePage = () => {
@@ -11,6 +12,9 @@ const HomePage = () => {
         <p className="md:w-[450px] mt-5">
           Discover wide range of music NFTs from your favorite music artistes.
         </p>
+      </div>
+      <div>
+        <NFTsTab />
       </div>
     </div>
   )
