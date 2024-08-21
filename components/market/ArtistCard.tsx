@@ -62,7 +62,7 @@ export const ArtistCard = ({ image }: propsI) => {
           </div>
 
           <div>
-            <Link href={""}>
+            <Link href={"/creator/1"}>
               <Avatar
                 size={38}
                 className="backdrop-blur-[7px] border-[1px] border-white/10 bg-white/5"
