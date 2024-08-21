@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import { MusicNFTs } from "./MusicNFTs"
+import { Artists } from "./Artists"
 
 export const NFTsTab = () => {
   const [current, setCurrent] = useState(0)
@@ -10,8 +11,8 @@ export const NFTsTab = () => {
       content: <MusicNFTs />,
     },
     {
-      title: "Topping the Charts",
-      content: <div>Trending Music NFTs</div>,
+      title: "Artists",
+      content: <Artists />,
     },
   ]
   return (
@@ -25,7 +26,7 @@ export const NFTsTab = () => {
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={`px-4 py-2 rounded-lg cursor-pointer ${
-                  active ? "bg-primary-default" : ""
+                  active ? "bg-primary-default" : "text-white/60"
                 }`}
               >
                 <p className="text-sm text-center font-semibold">

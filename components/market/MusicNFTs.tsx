@@ -31,7 +31,7 @@ export const MusicNFTs = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 my-5 md:my-7 gap-5">
+      <div className="grid md:grid-cols-4 grid-cols-1 my-5 md:my-7 gap-5">
         <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
         <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
         <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
