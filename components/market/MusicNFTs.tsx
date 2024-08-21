@@ -31,19 +31,19 @@ export const MusicNFTs = () => {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-1 my-5 md:my-7 gap-5">
+      <div className="grid md:grid-cols-5 grid-cols-1 my-5 md:my-7 gap-5">
         <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_1280.jpg" />
         <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
-        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
-        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft2.png&w=2048&q=100" />
-        <MusicNFTCard image="https://str.vercel.app/_next/image?url=%2Fnft4.png&w=2048&q=100" />
-        <MusicNFTCard image="https://qstn-admin-businesses.vercel.app/_next/image?url=%2Fmedia1.png&w=1920&q=100" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2013/10/02/22/47/tango-190026_1280.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2016/10/04/02/38/rap-1713404_1280.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2018/01/16/10/18/headphones-3085681_1280.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2016/11/21/14/04/beautiful-1845578_640.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2017/05/26/18/27/band-2346728_640.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2022/07/18/14/09/marching-band-7330002_640.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_640.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2015/08/25/20/53/guitar-907654_640.jpg" />
+        <MusicNFTCard image="https://cdn.pixabay.com/photo/2013/10/02/22/47/tango-190026_1280.jpg" />
       </div>
     </div>
   )
