@@ -65,24 +65,30 @@ export const UserProfile = () => {
 
         <div>
           <div className="flex flex-row md:w-auto w-full md:flex-col gap-4 md:gap-7">
-            <Button
-              type="primary"
-              icon={<MdOutlineArrowForward />}
-              iconPosition="end"
-              className="md:w-auto w-full"
-              size="large"
+            <Link
+              href={"/settings/edit-profile"}
+              className="block md:w-auto w-full"
             >
-              Edit Profile
-            </Button>
-            <Button
-              // type="primary"
-              icon={<MdOutlineArrowForward />}
-              iconPosition="end"
-              className="md:w-auto w-full bg-gradient-to-t from-primary-default/20 to-primary-default/0 border-primary-default"
-              size="large"
-            >
-              Market
-            </Button>
+              <Button
+                type="primary"
+                icon={<MdOutlineArrowForward />}
+                iconPosition="end"
+                className="w-full"
+                size="large"
+              >
+                Edit Profile
+              </Button>
+            </Link>
+            <Link href={"/market"} className="block md:w-auto w-full">
+              <Button
+                icon={<MdOutlineArrowForward />}
+                iconPosition="end"
+                className="w-full bg-gradient-to-t from-primary-default/20 to-primary-default/0 border-primary-default"
+                size="large"
+              >
+                Market
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
