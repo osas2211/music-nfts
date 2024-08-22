@@ -11,7 +11,7 @@ export const Artists = () => {
     <div>
       <div className="flex justify-between items-center gap-3 flex-wrap">
         <p className="md:text-3xl text-xl font-arvo font-bold">Artists</p>
-        <div className="inline-flex gap-5 items-center text-sm">
+        <div className="md:inline-flex flex gap-5 items-center md:justify-start justify-between text-sm md:w-auto w-full">
           <div className="inline-flex gap-3 flex-wrap items-center cursor-pointer">
             <FcMusic />
             <p className="font-semibold">Music Genres</p>
@@ -22,13 +22,20 @@ export const Artists = () => {
             Filter
           </p>
 
-          <div>
+          <div className="hidden md:block">
             <Input
               placeholder="Search artist"
               className="h-[45px] bg-dark-800 border-0 hover:border-[1px] active:border-[1px] md:w-[250px] w-full"
               prefix={<CgSearch className="text-primary-default" />}
             />
           </div>
+        </div>
+        <div className="md:hidden w-full">
+          <Input
+            placeholder="Search artist"
+            className="h-[45px] bg-dark-800 border-0 hover:border-[1px] active:border-[1px] md:w-[250px] w-full"
+            prefix={<CgSearch className="text-primary-default" />}
+          />
         </div>
       </div>
 

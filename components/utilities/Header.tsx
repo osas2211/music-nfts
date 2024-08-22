@@ -33,7 +33,7 @@ export const Header = () => {
                       active
                         ? "bg-gradient-to-t from-primary-default/10 border-b-primary-default border-b-[1px] to-primary-default/0"
                         : ""
-                    } text-white capitalize p-3 px-4 border-`}
+                    } text-white capitalize p-3 px-4 border- md:block hidden`}
                     key={index}
                   >
                     {route.title}
