@@ -1,14 +1,14 @@
 "use client"
 import React, { useState } from "react"
-import { MusicNFTs } from "./MusicNFTs"
+import { TopMusic } from "./TopMusic"
 import { Artists } from "./Artists"
 
-export const NFTsTab = () => {
+export const HomeTab = () => {
   const [current, setCurrent] = useState(0)
   const items = [
     {
-      title: "Music NFTs",
-      content: <MusicNFTs />,
+      title: "Explore Music",
+      content: <TopMusic />,
     },
     {
       title: "Artists",

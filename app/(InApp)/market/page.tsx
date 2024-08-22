@@ -1,5 +1,5 @@
 "use client"
-import { NFTsTab } from "@/components/market/NFTsTab"
+import { HomeTab } from "@/components/market/HomeTab"
 import React from "react"
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
         </p>
       </div>
       <div>
-        <NFTsTab />
+        <HomeTab />
       </div>
     </div>
   )

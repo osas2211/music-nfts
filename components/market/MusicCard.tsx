@@ -11,7 +11,7 @@ interface propsI {
   image: string
 }
 
-export const MusicNFTCard = ({ image }: propsI) => {
+export const MusicCard = ({ image }: propsI) => {
   return (
     <>
       <div className="p-3 rounded-2xl border-[1px] border-white/10 relative overflow-hidden">
