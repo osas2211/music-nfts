@@ -1,18 +1,18 @@
 "use client"
 import React, { useState } from "react"
-import { TopMusic } from "./TopMusic"
-import { Artists } from "./Artists"
+import { SongsList } from "./SongsList"
+import { ArtistsList } from "./ArtistsList"
 
 export const HomeTab = () => {
   const [current, setCurrent] = useState(0)
   const items = [
     {
       title: "Explore Music",
-      content: <TopMusic />,
+      content: <SongsList title="Top Music" />,
     },
     {
       title: "Artists",
-      content: <Artists />,
+      content: <ArtistsList title="Artists" />,
     },
   ]
   return (

@@ -54,7 +54,7 @@ export const UserProfile = () => {
             <p className="text-[17px] font-semibold">37</p>
           </div>
           <div>
-            <p className="text-sm text-white/80">Earnings</p>
+            <p className="text-sm text-white/80">Royalties</p>
             <p className="text-[17px] font-semibold">$245,000.78</p>
           </div>
           <div>

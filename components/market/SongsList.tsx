@@ -9,12 +9,18 @@ import { LuLayoutGrid } from "react-icons/lu"
 import { LiaListUlSolid } from "react-icons/lia"
 import { MusicListCard } from "./MusicListCard"
 
-export const TopMusic = () => {
+interface propsI {
+  title: string
+}
+
+export const SongsList = ({ title }: propsI) => {
   const [isGrid, setIsGrid] = useState(true)
   return (
     <div>
       <div className="flex justify-between items-center gap-3 flex-wrap">
-        <p className="md:text-3xl text-xl font-arvo font-bold">Top Music</p>
+        <p className="md:text-3xl text-xl font-arvo font-bold capitalize">
+          {title}
+        </p>
         <div className="md:inline-flex flex gap-5 items-center md:justify-start justify-between text-sm md:w-auto w-full">
           <div className="inline-flex gap-3 flex-wrap items-center cursor-pointer">
             <FcMusic />
@@ -60,7 +66,7 @@ export const TopMusic = () => {
           />
         </div>
       </div>
-      <div className="my-5 md:my-7">{isGrid ? <GridView /> : <ListView />}</div>
+      <div className="my-5 md:my-8">{isGrid ? <GridView /> : <ListView />}</div>
     </div>
   )
 }

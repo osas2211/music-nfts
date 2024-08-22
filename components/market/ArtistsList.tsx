@@ -6,11 +6,15 @@ import { Input } from "antd"
 import { CgSearch } from "react-icons/cg"
 import { ArtistCard } from "./ArtistCard"
 
-export const Artists = () => {
+interface propsI {
+  title: string
+}
+
+export const ArtistsList = ({ title }: propsI) => {
   return (
     <div>
       <div className="flex justify-between items-center gap-3 flex-wrap">
-        <p className="md:text-3xl text-xl font-arvo font-bold">Artists</p>
+        <p className="md:text-3xl text-xl font-arvo font-bold">{title}</p>
         <div className="md:inline-flex flex gap-5 items-center md:justify-start justify-between text-sm md:w-auto w-full">
           <div className="inline-flex gap-3 flex-wrap items-center cursor-pointer">
             <FcMusic />
@@ -39,7 +43,7 @@ export const Artists = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 my-5 md:my-7 gap-5">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 my-5 md:my-8 gap-5">
         <ArtistCard image="https://str.vercel.app/_next/image?url=%2Fnft.png&w=2048&q=100" />
         <ArtistCard image="https://cdn.pixabay.com/photo/2023/10/14/14/22/man-8314982_1280.jpg" />
         <ArtistCard image="https://cdn.pixabay.com/photo/2019/04/12/21/19/man-4123268_1280.jpg" />

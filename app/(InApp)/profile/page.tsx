@@ -1,5 +1,6 @@
 "use client"
 import { UserProfile } from "@/components/profile/UserProfile"
+import { UserProfileTabs } from "@/components/profile/UserProfileTabs"
 import { GoBack } from "@/components/utilities/GoBack"
 import React from "react"
 
@@ -12,6 +13,7 @@ const ProfilePage = () => {
       </div>
       <div className="md:my-8 my-5">
         <UserProfile />
+        <UserProfileTabs />
       </div>
     </div>
   )
