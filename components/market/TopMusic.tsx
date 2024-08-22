@@ -1,12 +1,15 @@
 "use client"
-import React from "react"
+import React, { useState } from "react"
 import { FcMusic } from "react-icons/fc"
 import { BiSolidDownArrow } from "react-icons/bi"
 import { Input } from "antd"
 import { CgSearch } from "react-icons/cg"
 import { MusicCard } from "./MusicCard"
+import { LuLayoutGrid } from "react-icons/lu"
+import { LiaListUlSolid } from "react-icons/lia"
 
 export const TopMusic = () => {
+  const [isGrid, setIsGrid] = useState(true)
   return (
     <div>
       <div className="flex justify-between items-center gap-3 flex-wrap">
@@ -28,6 +31,24 @@ export const TopMusic = () => {
               className="h-[45px] bg-dark-800 border-0 hover:border-[1px] active:border-[1px] md:w-[250px] w-full"
               prefix={<CgSearch className="text-primary-default" />}
             />
+          </div>
+          <div className="flex bg-dark-700/70 rounded-md">
+            <div
+              className={`p-3 rounded-md cursor-pointer ${
+                isGrid ? "bg-primary-default" : ""
+              }`}
+              onClick={() => setIsGrid(true)}
+            >
+              <LuLayoutGrid size={20} />
+            </div>
+            <div
+              className={`p-3 rounded-md cursor-pointer ${
+                !isGrid ? "bg-primary-default" : ""
+              }`}
+              onClick={() => setIsGrid(false)}
+            >
+              <LiaListUlSolid size={21} />
+            </div>
           </div>
         </div>
       </div>
