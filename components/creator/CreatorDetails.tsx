@@ -15,7 +15,9 @@ export const CreatorDetails = () => {
         <h3 className="font-arvo font-semibold text-sm text-green-200">
           #Top Rated Creator
         </h3>
-        <h2 className="font-arvo font-semibold text-[4rem]">The Chase Dorm.</h2>
+        <h2 className="font-arvo font-semibold md:text-6xl text-4xl md:mb-4 md:mt-3 mt-2 mb-4">
+          The Chase Dorm.
+        </h2>
         <p className="text-sm text-white/80 tracking-wide leading-relaxed md:w-[70%]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
           natus ducimus officiis aperiam odit aliquam nam id esse. Voluptas
