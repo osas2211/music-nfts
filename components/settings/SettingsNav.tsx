@@ -14,7 +14,7 @@ export const SettingsNav = () => {
     <div>
       <div className="md:h-[60vh] bg-dark-900 md:py-7 md:space-y-3 border-[1px] border-white/5 rounded-lg md:px-0 p-2 md:rounded-sm md:block grid grid-cols-3 md:grid-cols-1">
         {routes.map((route, index) => {
-          const active = pathname.includes(route.path)
+          const active = pathname === route.path
           const activeCls =
             "bg-gradient-to-r md:from-primary-default/25 md:to-primary-default/5 from-primary-default to-primary-default md:border-primary-default md:text-green-300 text-white rounded-lg md:rounded-none"
           return (
