@@ -65,10 +65,7 @@ export const UserProfile = () => {
 
         <div>
           <div className="flex flex-row md:w-auto w-full md:flex-col gap-4 md:gap-7">
-            <Link
-              href={"/settings/edit-profile"}
-              className="block md:w-auto w-full"
-            >
+            <Link href={"/settings"} className="block md:w-auto w-full">
               <Button
                 type="primary"
                 icon={<MdOutlineArrowForward />}
