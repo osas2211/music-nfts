@@ -3,8 +3,7 @@ import Link from "next/link"
 import React from "react"
 import { CiMusicNote1 } from "react-icons/ci"
 import { usePathname } from "next/navigation"
-import { Button } from "antd"
-import { TbPlugConnected } from "react-icons/tb"
+import { ConnectWallet } from "./ConnectWallet"
 
 const routes = [
   { path: "/market", title: "market" },
@@ -41,15 +40,7 @@ export const Header = () => {
                 )
               })}
               <li>
-                <Button
-                  className="h-[42px]"
-                  size="large"
-                  type="primary"
-                  icon={<TbPlugConnected />}
-                  iconPosition="start"
-                >
-                  Connect wallet
-                </Button>
+                <ConnectWallet />
               </li>
             </ul>
           </nav>
