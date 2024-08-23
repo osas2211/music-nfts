@@ -22,7 +22,7 @@ export const SettingsNav = () => {
               <div
                 className={`${
                   active ? activeCls : "border-transparent"
-                } md:border-l-[4px] p-3 px-5 md:text-[16px] text-sm`}
+                } md:border-l-[4px] p-3 px-5 md:text-[16px] text-sm md:text-start text-center`}
               >
                 {route.title}
               </div>
